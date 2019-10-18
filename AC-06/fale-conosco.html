@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet"  href="_css/estilo.css"/>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <script>function calc_total(){
+var qtd = parseInt(document.getElementById('Qtd').value);
+tot = qtd * 1500;
+document.getElementById('Tot').value = tot;
+    }
+</script>
+</head>
+
+<body>
+<div class="corpo" id="corpo">
+<header>
+
+    <img  class= "contato" src="./_imagens/contato.png">
+
+    <ul class= "menu">
+        <li><a href= "#">Home</li></a>
+        <li><a href= "#">Especificações</li></a>
+        <li><a href= "#">Fotos</li></a>
+        <li><a href= "#">Multimidia</li></a>
+        <li><a href= "#">Fale Conosco</li></a>
+    </ul>
+<br >
+    <h1 class="titulo">Google Glass</h1>
+<p class="arialD">
+    A revolução do Google está chegando
+</p>
+    <img src="./_imagens/glass-logo-peq.jpg">
+    <fieldset class="linha">
+   
+
+        <h4 class="arialD"> Fale Conosco > Contato </h4>
+        <h1 class="titulo">Formulario de Contato</h1>
+
+<form oninput="calc_total();">
+    <br>
+    <br>
+<fieldset class="usuario"><legend>Identificação do Usuário</legend>
+<p><label for="Nome">Nome:</label>
+    <input type="text" name="Nome" id="Nome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+<p>
+    <label for="Senha">Senha: </label>
+    <input type="password" name="Senha" id="Senha" size="8" maxlength="8" placeholder="8 dígitos"/></p>
+<p>
+    <label for="Mail">E-mail: </label>
+    <input type="email" name="Mail" id="Mail" size="20" maxlength="40"/></p>
+    <fieldset class="sexo"><legend>Sexo</legend>
+        <input type="radio" name="Sexo" id="Masc" checked/> <label for="Masc">Masculino</label><br/>
+        <input type="radio" name="Sexo" id="Fem" /> <label for="Fem">Feminino</label>
+    </fieldset>
+    <p>Data de Nascimento:<input type="date" name="Nasc" id="Nasc"/></p>
+</fieldset>
+
+<fieldset class="endereco"><legend>Endereço do Usuário</legend>
+    <p><label for="Rua">Logradouro: </label>
+    <input type="text" name="Rua" id="Rua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."/></p>
+    <p><label for="Num">Número: </label>
+    <input type="number" name="Num" id="Num" min="0" max="99999"/></p>
+    <p><label for="Est">Estado:</label>
+    <select name="Est" id="Est">
+       <optgroup label="Região Sudeste">
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+        </optgroup>
+        <optgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </optgroup>
+        <optgroup label="Região Centro-Oeste">
+            <option value="BSB" selected>Brasília</option>
+        </optgroup>
+        
+    </select></p>
+    <p><label for="Cid">Cidade:</label>
+    <input type="text" name="Cid" id="Cid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Niterói"></option>
+        <option value="Belford Roxo"></option>
+    </datalist>
+</fieldset>
+
+<fieldset class="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="Urg">Grau de Urgência:</label>
+        Min<input class="slider" type="range" name="Urgencia" id="Urgencia" min="0" maxlength="10" step="1">Máx</p>
+    <p><label for="Msg">Mensagem:</label>
+    <textarea name="Msg" class="Msg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+</fieldset>
+
+<fieldset class="pedido"><legend>Quero um Google Glass</legend>
+    <p><input type="checkbox" name="Ped" id="Ped" />
+    <label for="Ped">Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="Cor">Cor:</label>
+    <input type="color" name="Cor" id="Cor" value="#0000FF"/></p>
+    <p><label for="Qtd">Quantidade:</label>
+    <input type="number" name="Qtd" id="Qtd" min="0" max="9999" value="0"/></p>
+    <p><label for="Tot">Preço Total: R$</label>
+    <input type="text" name="Tot" id="Tot" placeholder="Total a pagar" readonly/></p>
+</fieldset>
+
+ <input type="image" name="Enviar" src="_imagens/botao-enviar.png"/>
+</fieldset>
+ </form>
+</div>
+</body> 
+</html>

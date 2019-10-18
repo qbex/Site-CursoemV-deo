@@ -1,0 +1,117 @@
+body{
+margin-left:12%;
+margin-right:12%;
+background-color:lightgray;
+}
+
+div#corpo{
+background-color: #ffffff;
+margin: -20px auto 0px auto;
+box-shadow: 0px 0px 10px rgba(0,0,0,5);
+}
+.menu
+{list-style-type:none;
+display: flex;
+position: absolute;
+right:220px;
+font-family:Arial;
+}
+
+
+
+li a {
+display: inline;
+padding: 3px;
+background-color:lightgray;
+border-left:3px solid white;
+color: black; 
+text-decoration:none;
+}
+    
+li :hover,
+li :hover a{
+background-color: black;
+color: aliceblue;
+}
+
+.direita {
+text-align: right;
+}
+form {
+margin: auto;
+}
+.arialD
+{font-family:"Arial";
+font-weight:bold;
+color:lightgray;
+}
+
+legend{
+font-family: "Arial";
+font-weight: bold;
+color:darkgrey;
+}
+
+.contato {
+position: absolute;
+right:220px;
+top:70px;
+}
+
+.sexo {
+width: 32%;
+}
+
+.linha{
+border-left:40px;
+border-right: 40px;
+}
+.usuario {
+background: url("../_imagens/icone-contato.png") no-repeat 95% 95% ;
+margin: auto 260px auto 260px;
+
+}
+
+.endereco {
+background: url("../_imagens/icone-endereco.png") no-repeat 95% 95% ;
+margin: auto 260px auto 260px;
+}
+.mensagem {
+background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95% ;
+margin: auto 260px auto 260px;
+}
+
+.pedido {
+background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95% ;
+margin: auto 260px auto 260px;
+}
+.slider{
+-webkit-appearance: none; 
+appearance: none;
+width:100px; 
+height: 3px; 
+background: gray; 
+border: 1px solid lightslategray;
+outline: none; 
+opacity: 0.7; 
+-webkit-transition: 0.2s;
+}
+.slider::-webkit-slider-thumb{
+-webkit-appearance: none;
+appearance: none;
+width: 16px; 
+height: 16px; 
+border: 1px solid #000000;
+background: white; 
+border-radius: 50px;
+}
+
+@font-face {
+font-family: "bubble";
+src: url("../_fonts/bubblegum-sans-regular.otf") format("truetype");
+}
+
+.titulo{
+    font-family:"bubble";
+    color: gray;
+}
